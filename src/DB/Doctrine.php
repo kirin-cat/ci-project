@@ -1,7 +1,5 @@
 <?php
 
-namespace Kirin\CI\DB;
-
 use Doctrine\Common\ClassLoader;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Setup;
