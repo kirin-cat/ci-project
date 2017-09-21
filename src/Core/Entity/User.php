@@ -2,20 +2,32 @@
 
 namespace Kirin\CI\Core\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+
 /**
- * @MappedSuperclass
+ * @ORM\MappedSuperclass
  **/
 class User
 {
-    /** @Id @Column(type="integer") @GeneratedValue **/
+    use TimestrampableTrait;
+
+    /**
+     * @ORM\ID
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     **/
     protected $id;
 
-    /** @Column(type="string") **/
+    /** @ORM\Column(type="string", nullable=true)**/
     protected $firstName;
 
-    /** @Column(type="string") **/
+    /** @ORM\Column(type="string", nullable=true) **/
     protected $lastName;
 
-    /** @Column(type="string") **/
+    /** @ORM\Column(type="string", nullable=true) **/
     protected $email;
+
+    /** @ORM\Column(type="string", nullable=true) **/
+    protected $emailCanonical;
 }
