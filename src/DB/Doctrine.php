@@ -1,6 +1,6 @@
 <?php
 
-namespace Bonn\Core\DB\Doctrine;
+namespace Kirin\CI\DB;
 
 use Doctrine\Common\ClassLoader;
 use Doctrine\ORM\EntityManager;
