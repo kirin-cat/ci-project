@@ -1,0 +1,24 @@
+{
+	"name": "kirin-cat/core",
+	"type": "library",
+	"description": "....",
+	"keywords": [
+		"codigniter",
+	],
+	"homepage": "https://github.com/kirin-cat",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "bonn"
+		}
+	],
+	"require": {
+		"php": ">=7.0",
+		"doctrine/orm": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Bonn\\Core\\": "src/"
+		}
+	}
+}
