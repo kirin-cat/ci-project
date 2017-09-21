@@ -1,9 +1,9 @@
 {
-	"name": "kirin-cat/core",
+	"name": "kirin-cat/ci-project",
 	"type": "library",
 	"description": "....",
 	"keywords": [
-		"codigniter",
+		"codeigniter"
 	],
 	"homepage": "https://github.com/kirin-cat",
 	"license": "MIT",
